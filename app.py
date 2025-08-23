@@ -1,6 +1,7 @@
 import  streamlit as  st
 import pickle
 import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 stop=stopwords.words('english')
 
@@ -28,4 +29,5 @@ if st.button('check'):
     if  res==1:
         st.header('spam')
     else:
+
         st.header("not spam")
